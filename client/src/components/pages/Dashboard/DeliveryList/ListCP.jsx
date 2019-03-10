@@ -30,7 +30,7 @@ const data=[
     const rdList =()=>(
         data.map(
             item =>(
-                <ItemSTY>
+                <ItemSTY key={item.name}>
                     <ValusNameSTY>{item.name}</ValusNameSTY>
                     <StSTY color={item.color}>{item.st}</StSTY>
                     <Switch

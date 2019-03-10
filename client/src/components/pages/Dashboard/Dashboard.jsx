@@ -8,7 +8,7 @@ import ListConpt from './costomerlis/ListConpt';
 import MapContainer from './map/MapContainer';
 import CustomizedDialogDemo from './newPacges/CustomizedDialogDemo'
 import DeliveryCP from './DeliveryList/DeliveryCP';
-import FormCT from './newPacges/FormCT';
+
 // import {styThem} from '../../../style/varble';
 
  class Dashboard extends Component {

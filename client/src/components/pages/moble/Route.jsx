@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { styThem } from '../../../style/varble'
+
 import styled from 'styled-components';
 import { connect } from 'react-redux'
 import Received from './Received';

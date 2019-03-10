@@ -44,9 +44,9 @@ import styled from 'styled-components';
 
   render() {
 
-    const focusUsernameInputField = input => {
-      input.focus();
-    };
+    // const focusUsernameInputField = input => {
+    //   input.focus();
+    // };
 
 
     return (
