@@ -23,12 +23,19 @@ mongoose
 })
 
 
-app.use(
-    bodyParser.json(),
-    bodyParser.urlencoded({extended:false}),
-    morgan('dev'),
-    cors()
-)
+const whitelist = [
+    'https://client-viva.herokuapp.com',
+    'http://localhost:3000',
+    'https://function-fire-3f8d0.firebaseapp.com'
+]
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:false}))
+app.use( morgan('dev'))
+app.use(cors({
+    origin: whitelist,
+    credentials: true
+}));
 
 
 

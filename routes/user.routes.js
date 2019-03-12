@@ -5,7 +5,7 @@ const checkJwt = require('../middleware/check-jwt')
 
 
 router.post('/new', (req,res, next)=>{
-    const {userName,password} = req.body
+    const {userName,password,position} = req.body
 
     if (!userName || !password) {
         return res.status(400).json(
@@ -19,6 +19,7 @@ router.post('/new', (req,res, next)=>{
     let user = new User()
     user.userName = userName
     user.password = password
+    user.position = position
 
     User.findOne({userName: userName}, (err, existingUser)=>{
         if (err) throw err
